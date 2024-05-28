@@ -1,16 +1,20 @@
+
 import streamlit as st
-import pandas as pd
-import numpy as np
-a = st.button('test')
-b = st.button('caty')
 
-if a:
-    st.write('cinnadmokrolpl')
+st.header('fredom fighters')
+name = st.radio(
+    "what was your name last time we met:",
+    ["athychew","mager cat","sofia","amilya","nicol","none of the above"])
 
-
-if b:
-    st.write('cocox')
-
-
+if name == "none of the above":
+    st.write("get lost ")
+    st.image("getlost.jpeg")
+else:
+    st.write("welcome "+name)
 
 
+
+
+
+
+A, col2, col3 = st.columns(3)
